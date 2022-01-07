@@ -1,0 +1,12 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+// .container{
+//     //max-width: 75%;
+// }
+
+.main-content{
+    background-color: #fff;
+    position: relative; z-index: 10;
+    box-shadow: $box-shadow;
+}

@@ -1,0 +1,17 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+.technologies{
+    background-color:#ededed;
+    padding: 5rem 4rem;
+    margin: 2rem 0;
+    @include flex(row , space-evenly);
+    flex-wrap: wrap;
+    .tech{
+        width: 70px;
+        margin: 0.5rem;
+        &:hover{
+            transform: scale(1.4);
+            cursor: pointer;
+        }
+    } 
+}

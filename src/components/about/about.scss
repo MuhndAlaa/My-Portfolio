@@ -1,0 +1,91 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+.about{
+    @extend %section-padding;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.6rem;
+    h2{
+        @extend %section-title;
+        position: relative;
+        padding-bottom: 1rem;
+    }
+    .who-am-I{
+        @include flex();
+        margin-bottom: 3rem;
+        overflow: hidden;
+        img{
+            width: 40%;
+            margin-bottom: 4rem;
+        }
+        h3{
+            font-size: 2.5rem;
+        }
+        p{
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .skills{
+        @include flex(column , space-around , flex-start);
+        text-align: left;
+        list-style-type: none;
+        overflow: hidden;
+        li{
+            background-color: #ededed;
+            padding: 1.5rem 1rem;
+            font-size: 2rem;
+            border-radius: 30px;
+            position: relative;
+            padding-left: 8rem;
+            margin-bottom: 1rem;
+            &:before{
+                content: "";
+                width: 60px; height: 60px;
+                border-radius: 50%;
+                border: 5px solid $black;
+                padding: 3rem;
+                background-color: #ff004c;
+                filter: invert(1);
+                background-size: 70% 70%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                position: absolute;
+                top: -5px; left: 0;
+            }
+            &:nth-child(1)::before{
+                background-image: url("../../assests/device-svgrepo-com.svg");
+            }
+            &:nth-child(2)::before{
+                background-image: url("../../assests/rocket-svgrepo-com.svg");
+            }
+            &:nth-child(3)::before{
+                background-image: url("../../assests/delivery-truck-deliver-svgrepo-com.svg");
+            }
+            &:nth-child(4)::before{
+                background-image: url("../../assests/web-internet-online-network-seo-svgrepo-com.svg");
+            }
+        }
+    }
+    
+}
+
+@media (max-width:992px) {
+    .about{
+        .skills{
+            li{
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+  
+}
+
+@media (max-width:450px) {
+ 
+}

@@ -1,0 +1,70 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+.contact{
+    @extend %section-padding;
+    background-color: #ededed;
+    font-size: 1.6rem;
+    position: sticky;
+    bottom: 0; right: 0;
+    width: 100%; z-index: 0;
+    word-break: break-word;
+    text-align: center;
+    h2{
+        @extend %section-title;
+        position: relative;
+        padding-bottom: 1rem;
+    }
+
+    .contact__message , .contact__reach{
+        padding: 0 5rem;
+        text-align: left;
+        h3{
+            font-size: 3rem;
+            position: relative;
+            margin-bottom: 3rem;
+            padding: 1rem 0;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: 0; left: 0;
+                background-color: $second-color;
+                width: 150px; height: 3px;
+            }
+        }
+        label{
+            font-size: 2rem;
+        }
+        input{
+            height: 4rem;
+            font-size: 2rem;
+        }
+        textarea{
+            font-size: 1.6rem;
+        }
+        ul{
+            padding: 0;
+            list-style-type: none;
+            li {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+                i{
+                    margin: 0 1rem;
+                    color: $second-color;
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $black;
+        }
+        .btn-prime{
+            background-color: $second-color;
+            color: $white;
+            font-size: 2rem;
+            margin: 1rem 0;
+            padding: 0.5rem 2rem;
+        }
+    }
+}
