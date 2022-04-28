@@ -12,8 +12,11 @@ import redux from "../../assests/redux.png";
 import sass from "../../assests/sass.png";
 import typescript from "../../assests/typescript.png";
 import gsap from "../../assests/gsap.png";
+import nodejs from "../../assests/nodejs.png";
+import mongodb from "../../assests/mongodb.png";
+
 
 export const techs =  [
-    angular , bootstrap , css3 , github , firebase , html5 , javascript , jquery , npm , react , redux , sass , typescript , gsap
+    angular , bootstrap , css3 , github , firebase , html5 , javascript , jquery , npm , react , redux , sass , typescript , gsap , nodejs , mongodb
 ]
 
