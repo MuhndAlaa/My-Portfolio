@@ -1,6 +1,6 @@
 # Portfolio
 
-A react for my portfolio
+A react app for my portfolio
 
 
 ## Run Locally
